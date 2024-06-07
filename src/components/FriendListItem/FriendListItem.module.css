@@ -1,0 +1,28 @@
+.item {
+  composes: card from '../Profile/Profile.module.css';
+  width: 120px;
+  padding: 20px;
+  letter-spacing: -0.02em;
+}
+
+.card__img {
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.is__online {
+  color: var(--color-green);
+}
+
+.is__offline {
+  color: var(--color-red);
+}

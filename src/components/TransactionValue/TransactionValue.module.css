@@ -1,0 +1,8 @@
+.empty__text {
+  border: 2px solid var(--color-black);
+  text-align: center;
+}
+
+.even__empty:nth-child(even) {
+  background-color: var(--color-light-gray);
+}
