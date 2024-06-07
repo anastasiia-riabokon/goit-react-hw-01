@@ -1,19 +1,24 @@
 import '../App.css';
 
 import userData from '../data/userData.json';
+import friends from '../data/friends.json';
+
+import FriendList from './FriendList/FriendList';
 import Profile from './Profile/Profile';
 
 const App = () => {
-  console.log(userData);
+  const { username, tag, location, avatar, stats } = userData;
   return (
     <>
       <Profile
-        name={userData.username}
-        tag={userData.tag}
-        location={userData.location}
-        image={userData.avatar}
-        stats={userData.stats}
+        name={username}
+        tag={tag}
+        location={location}
+        image={avatar}
+        stats={stats}
       />
+
+      <FriendList friends={friends} />
     </>
   );
 };

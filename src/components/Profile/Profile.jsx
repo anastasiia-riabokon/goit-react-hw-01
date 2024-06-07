@@ -11,7 +11,7 @@ export default function Profile({ name, tag, location, image, stats }) {
       <ul>
         {statsArray.map(([key, value]) => (
           <li key={key}>
-            <span>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
+            <span>{key[0].toUpperCase() + key.slice(1)}</span>
             <span>{value}</span>
           </li>
         ))}
